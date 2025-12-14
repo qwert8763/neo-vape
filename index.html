@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Vape — Жидкости и одноразки по выгодным ценам</title>
+    <meta name="description" content="Купите жидкости и одноразочные электронные сигареты Neo Vape с доставкой. Лучшие цены, быстрая отправка, 24/7 поддержка в Telegram.">
+    <meta name="keywords" content="жидкость для вейпа, одноразки, электронные сигареты, Neo Vape, вейп купить">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="Logotip.jpg" alt="Neo Vape" class="logo" onerror="this.src='https://i.imgur.com/5VxY7bK.png'">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Искать товары...">
+        <button id="searchBtn">🔍</button>
+    </div>
+    <a href="cart.html" id="cartLink">🛒 Корзина (<span id="cartCount">0</span>)</a>
+</header>
+
+<main class="container">
+
+    <div id="catalog">
+        <!-- Одноразки -->
+        <h2 class="category-header">Одноразки</h2>
+
+        <!-- Soak -->
+        <div class="product-item">
+            <img src="Soak.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Soak'">
+            <div class="product-info">
+                <div class="product-name">Soak</div>
+                <div class="product-sku">Артикул: 001</div>
+                <div class="product-description">Освежающий вкус с легкой кислинкой. Идеален для вечернего релакса.</div>
+            </div>
+            <div class="product-price">600 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Soak')">+</button>
+        </div>
+
+        <!-- Жидкости -->
+        <h2 class="category-header">Жидкости</h2>
+
+        <!-- Dota -->
+        <div class="product-item">
+            <img src="Dota.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Dota'">
+            <div class="product-info">
+                <div class="product-name">Dota</div>
+                <div class="product-sku">Артикул: 002</div>
+                <div class="product-description">Фруктовый вкус, идеален для вечернего релакса.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Dota')">+</button>
+        </div>
+
+        <!-- grex -->
+        <div class="product-item">
+            <img src="grex.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=grex'">
+            <div class="product-info">
+                <div class="product-name">grex</div>
+                <div class="product-sku">Артикул: 003</div>
+                <div class="product-description">Кремовый, сладкий и очень уютный.</div>
+            </div>
+            <div class="product-price">450 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('grex')">+</button>
+        </div>
+
+        <!-- inu -->
+        <div class="product-item">
+            <img src="inu.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=inu'">
+            <div class="product-info">
+                <div class="product-name">inu</div>
+                <div class="product-sku">Артикул: 004</div>
+                <div class="product-description">Насыщенный вкус спелого банана.</div>
+            </div>
+            <div class="product-price">300 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('inu')">+</button>
+        </div>
+
+        <!-- isterika -->
+        <div class="product-item">
+            <img src="isterika.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=isterika'">
+            <div class="product-info">
+                <div class="product-name">isterika</div>
+                <div class="product-sku">Артикул: 005</div>
+                <div class="product-description">Уникальный вкус арбузной жевательной резинки.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('isterika')">+</button>
+        </div>
+
+        <!-- Podonki -->
+        <div class="product-item">
+            <img src="Podonki.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Podonki'">
+            <div class="product-info">
+                <div class="product-name">Podonki</div>
+                <div class="product-sku">Артикул: 006</div>
+                <div class="product-description">Чистый, сочный вкус спелого арбуза.</div>
+            </div>
+            <div class="product-price">450 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Podonki')">+</button>
+        </div>
+
+        <!-- samoybitsa -->
+        <div class="product-item">
+            <img src="samoybitsa.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=samoybitsa'">
+            <div class="product-info">
+                <div class="product-name">samoybitsa</div>
+                <div class="product-sku">Артикул: 007</div>
+                <div class="product-description">Кисло-сладкий вкус виноградной газировки.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('samoybitsa')">+</button>
+        </div>
+
+        <!-- Samoybitsia -->
+        <div class="product-item">
+            <img src="Samoybitsia.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Samoybitsia'">
+            <div class="product-info">
+                <div class="product-name">Samoybitsia</div>
+                <div class="product-sku">Артикул: 008</div>
+                <div class="product-description">Идеальное сочетание кислой вишни и цитрусового лимона.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Samoybitsia')">+</button>
+        </div>
+
+        <!-- Anarhia -->
+        <div class="product-item">
+            <img src="Anarhia.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Anarhia'">
+            <div class="product-info">
+                <div class="product-name">Anarhia</div>
+                <div class="product-sku">Артикул: 009</div>
+                <div class="product-description">Освежающий вкус ананасовой газировки с легкой кислинкой. Идеален для летнего дня.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Anarhia')">+</button>
+        </div>
+
+        <!-- Angry vape -->
+        <div class="product-item">
+            <img src="Angry_vape.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Angry%20vape'">
+            <div class="product-info">
+                <div class="product-name">Angry vape</div>
+                <div class="product-sku">Артикул: 010</div>
+                <div class="product-description">Классический вкус апельсиновой газировки — сладкий, сочный и бодрящий.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Angry vape')">+</button>
+        </div>
+
+        <!-- Bkack out -->
+        <div class="product-item">
+            <img src="Bkack_out.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Bkack%20out'">
+            <div class="product-info">
+                <div class="product-name">Bkack out</div>
+                <div class="product-sku">Артикул: 011</div>
+                <div class="product-description">Чистый, сочный вкус спелого арбуза. Легкий, освежающий и идеальный для жаркого лета.</div>
+            </div>
+            <div class="product-price">370 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Bkack out')">+</button>
+        </div>
+
+        <!-- isterika mix -->
+        <div class="product-item">
+            <img src="isterika_mix.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=isterika%20mix'">
+            <div class="product-info">
+                <div class="product-name">isterika mix</div>
+                <div class="product-sku">Артикул: 012</div>
+                <div class="product-description">Уникальный вкус арбузной жевательной резинки — сладкий, фруктовый и немного мятный.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('isterika mix')">+</button>
+        </div>
+
+        <!-- Jnets -->
+        <div class="product-item">
+            <img src="Jnets.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Jnets'">
+            <div class="product-info">
+                <div class="product-name">Jnets</div>
+                <div class="product-sku">Артикул: 013</div>
+                <div class="product-description">Насыщенный вкус спелого банана. Кремовый, сладкий и очень уютный.</div>
+            </div>
+            <div class="product-price">450 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Jnets')">+</button>
+        </div>
+
+        <!-- Monstervapor -->
+        <div class="product-item">
+            <img src="Monstervapor.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Monstervapor'">
+            <div class="product-info">
+                <div class="product-name">Monstervapor</div>
+                <div class="product-sku">Артикул: 014</div>
+                <div class="product-description">Кисло-сладкий вкус виноградной газировки. Яркий, бодрящий и неповторимый.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Monstervapor')">+</button>
+        </div>
+
+        <!-- Zlaya -->
+        <div class="product-item">
+            <img src="Zlaya.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Zlaya'">
+            <div class="product-info">
+                <div class="product-name">Zlaya</div>
+                <div class="product-sku">Артикул: 016</div>
+                <div class="product-description">Фруктовый вкус, идеален для вечернего релакса. Сочный, сладкий и бодрящий.</div>
+            </div>
+            <div class="product-price">450 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Zlaya')">+</button>
+        </div>
+
+        <!-- zloe -->
+        <div class="product-item">
+            <img src="zloe.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=zloe'">
+            <div class="product-info">
+                <div class="product-name">zloe</div>
+                <div class="product-sku">Артикул: 017</div>
+                <div class="product-description">Горьковатый грейпфрут с сладкой малиной. Очень свежий, бодрящий и необычный вкус.</div>
+            </div>
+            <div class="product-price">400 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('zloe')">+</button>
+        </div>
+
+        <!-- Поды / Испарители -->
+        <h2 class="category-header">Поды / Испарители</h2>
+
+        <!-- Pasito coil -->
+        <div class="product-item">
+            <img src="Pasito_coil.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Pasito%20coil'">
+            <div class="product-info">
+                <div class="product-name">Pasito coil</div>
+                <div class="product-sku">Артикул: 015</div>
+                <div class="product-description">Испаритель K-5 — мощный, долговечный и универсальный. Подходит для всех устройств.</div>
+            </div>
+            <div class="product-price">300 ₽</div>
+            <button class="add-to-cart-btn" onclick="addToCart('Pasito coil')">+</button>
+        </div>
+
+    </div>
+
+</main>
+
+<script>
+    // ===== ГЛОБАЛЬНЫЕ ДАННЫЕ =====
+    let cart = JSON.parse(localStorage.getItem('smokeBobCart')) || [];
+
+    // ===== СОХРАНЕНИЕ =====
+    function saveCart() {
+        localStorage.setItem('smokeBobCart', JSON.stringify(cart));
+        updateCartCount();
+    }
+
+    // ===== СЧЁТЧИК КОРЗИНЫ =====
+    function updateCartCount() {
+        const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.getElementById('cartCount').textContent = count;
+    }
+
+    // ===== ДОБАВЛЕНИЕ В КОРЗИНУ =====
+    function addToCart(productName) {
+        const products = [
+            { name:'Soak', sku:'001', price:600, image:'Soak.jpg', description:'Освежающий вкус с легкой кислинкой. Идеален для вечернего релакса.' },
+            { name:'Dota', sku:'002', price:400, image:'Dota.jpg', description:'Фруктовый вкус, идеален для вечернего релакса.' },
+            { name:'grex', sku:'003', price:450, image:'grex.jpg', description:'Кремовый, сладкий и очень уютный.' },
+            { name:'inu', sku:'004', price:300, image:'inu.jpg', description:'Насыщенный вкус спелого банана.' },
+            { name:'isterika', sku:'005', price:400, image:'isterika.jpg', description:'Уникальный вкус арбузной жевательной резинки.' },
+            { name:'Podonki', sku:'006', price:450, image:'Podonki.jpg', description:'Чистый, сочный вкус спелого арбуза.' },
+            { name:'samoybitsa', sku:'007', price:400, image:'samoybitsa.jpg', description:'Кисло-сладкий вкус виноградной газировки.' },
+            { name:'Samoybitsia', sku:'008', price:400, image:'Samoybitsia.jpg', description:'Идеальное сочетание кислой вишни и цитрусового лимона.' },
+            { name:'Anarhia', sku:'009', price:400, image:'Anarhia.jpg', description:'Освежающий вкус ананасовой газировки с легкой кислинкой. Идеален для летнего дня.' },
+            { name:'Angry vape', sku:'010', price:400, image:'Angry_vape.jpg', description:'Классический вкус апельсиновой газировки — сладкий, сочный и бодрящий.' },
+            { name:'Bkack out', sku:'011', price:370, image:'Bkack_out.jpg', description:'Чистый, сочный вкус спелого арбуза. Легкий, освежающий и идеальный для жаркого лета.' },
+            { name:'isterika mix', sku:'012', price:400, image:'isterika_mix.jpg', description:'Уникальный вкус арбузной жевательной резинки — сладкий, фруктовый и немного мятный.' },
+            { name:'Jnets', sku:'013', price:450, image:'Jnets.jpg', description:'Насыщенный вкус спелого банана. Кремовый, сладкий и очень уютный.' },
+            { name:'Monstervapor', sku:'014', price:400, image:'Monstervapor.jpg', description:'Кисло-сладкий вкус виноградной газировки. Яркий, бодрящий и неповторимый.' },
+            { name:'Pasito coil', sku:'015', price:300, image:'Pasito_coil.jpg', description:'Испаритель K-5 — мощный, долговечный и универсальный. Подходит для всех устройств.' },
+            { name:'Zlaya', sku:'016', price:450, image:'Zlaya.jpg', description:'Фруктовый вкус, идеален для вечернего релакса. Сочный, сладкий и бодрящий.' },
+            { name:'zloe', sku:'017', price:400, image:'zloe.jpg', description:'Горьковатый грейпфрут с сладкой малиной. Очень свежий, бодрящий и необычный вкус.' },
+        ];
+
+        const product = products.find(p => p.name === productName);
+        if (!product) return;
+
+        const existing = cart.find(item => item.productId === product.name);
+        if (existing) {
+            existing.quantity++;
+        } else {
+            cart.push({
+                productId: product.name,
+                name: product.name,
+                sku: product.sku,
+                price: product.price,
+                image: product.image,
+                description: product.description,
+                quantity: 1
+            });
+        }
+        saveCart();
+        alert(`✅ "${product.name}" добавлен в корзину!`);
+    }
+
+    // ===== ИНИЦИАЛИЗАЦИЯ =====
+    document.addEventListener('DOMContentLoaded', () => {
+        updateCartCount();
+
+        // Поиск
+        document.getElementById('searchBtn')?.addEventListener('click', applySearchFilter);
+        document.getElementById('searchInput')?.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') applySearchFilter();
+        });
+    });
+
+    // ===== ПОИСК =====
+    function applySearchFilter() {
+        const searchTerm = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+        const container = document.getElementById('catalog');
+        if (!container) return;
+
+        if (!searchTerm) {
+            // Показать все товары
+            const allProducts = `
+                <h2 class="category-header">Одноразки</h2>
+                <div class="product-item">
+                    <img src="Soak.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Soak'">
+                    <div class="product-info">
+                        <div class="product-name">Soak</div>
+                        <div class="product-sku">Артикул: 001</div>
+                        <div class="product-description">Освежающий вкус с легкой кислинкой. Идеален для вечернего релакса.</div>
+                    </div>
+                    <div class="product-price">600 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Soak')">+</button>
+                </div>
+
+                <h2 class="category-header">Жидкости</h2>
+                <div class="product-item">
+                    <img src="Dota.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Dota'">
+                    <div class="product-info">
+                        <div class="product-name">Dota</div>
+                        <div class="product-sku">Артикул: 002</div>
+                        <div class="product-description">Фруктовый вкус, идеален для вечернего релакса.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Dota')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="grex.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=grex'">
+                    <div class="product-info">
+                        <div class="product-name">grex</div>
+                        <div class="product-sku">Артикул: 003</div>
+                        <div class="product-description">Кремовый, сладкий и очень уютный.</div>
+                    </div>
+                    <div class="product-price">450 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('grex')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="inu.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=inu'">
+                    <div class="product-info">
+                        <div class="product-name">inu</div>
+                        <div class="product-sku">Артикул: 004</div>
+                        <div class="product-description">Насыщенный вкус спелого банана.</div>
+                    </div>
+                    <div class="product-price">300 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('inu')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="isterika.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=isterika'">
+                    <div class="product-info">
+                        <div class="product-name">isterika</div>
+                        <div class="product-sku">Артикул: 005</div>
+                        <div class="product-description">Уникальный вкус арбузной жевательной резинки.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('isterika')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="Podonki.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Podonki'">
+                    <div class="product-info">
+                        <div class="product-name">Podonki</div>
+                        <div class="product-sku">Артикул: 006</div>
+                        <div class="product-description">Чистый, сочный вкус спелого арбуза.</div>
+                    </div>
+                    <div class="product-price">450 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Podonki')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="samoybitsa.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=samoybitsa'">
+                    <div class="product-info">
+                        <div class="product-name">samoybitsa</div>
+                        <div class="product-sku">Артикул: 007</div>
+                        <div class="product-description">Кисло-сладкий вкус виноградной газировки.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('samoybitsa')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="Samoybitsia.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Samoybitsia'">
+                    <div class="product-info">
+                        <div class="product-name">Samoybitsia</div>
+                        <div class="product-sku">Артикул: 008</div>
+                        <div class="product-description">Идеальное сочетание кислой вишни и цитрусового лимона.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Samoybitsia')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="Anarhia.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Anarhia'">
+                    <div class="product-info">
+                        <div class="product-name">Anarhia</div>
+                        <div class="product-sku">Артикул: 009</div>
+                        <div class="product-description">Освежающий вкус ананасовой газировки с легкой кислинкой. Идеален для летнего дня.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Anarhia')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="Angry_vape.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Angry%20vape'">
+                    <div class="product-info">
+                        <div class="product-name">Angry vape</div>
+                        <div class="product-sku">Артикул: 010</div>
+                        <div class="product-description">Классический вкус апельсиновой газировки — сладкий, сочный и бодрящий.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Angry vape')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="Bkack_out.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Bkack%20out'">
+                    <div class="product-info">
+                        <div class="product-name">Bkack out</div>
+                        <div class="product-sku">Артикул: 011</div>
+                        <div class="product-description">Чистый, сочный вкус спелого арбуза. Легкий, освежающий и идеальный для жаркого лета.</div>
+                    </div>
+                    <div class="product-price">370 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Bkack out')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="isterika_mix.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=isterika%20mix'">
+                    <div class="product-info">
+                        <div class="product-name">isterika mix</div>
+                        <div class="product-sku">Артикул: 012</div>
+                        <div class="product-description">Уникальный вкус арбузной жевательной резинки — сладкий, фруктовый и немного мятный.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('isterika mix')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="Jnets.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Jnets'">
+                    <div class="product-info">
+                        <div class="product-name">Jnets</div>
+                        <div class="product-sku">Артикул: 013</div>
+                        <div class="product-description">Насыщенный вкус спелого банана. Кремовый, сладкий и очень уютный.</div>
+                    </div>
+                    <div class="product-price">450 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Jnets')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="Monstervapor.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Monstervapor'">
+                    <div class="product-info">
+                        <div class="product-name">Monstervapor</div>
+                        <div class="product-sku">Артикул: 014</div>
+                        <div class="product-description">Кисло-сладкий вкус виноградной газировки. Яркий, бодрящий и неповторимый.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Monstervapor')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="Zlaya.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Zlaya'">
+                    <div class="product-info">
+                        <div class="product-name">Zlaya</div>
+                        <div class="product-sku">Артикул: 016</div>
+                        <div class="product-description">Фруктовый вкус, идеален для вечернего релакса. Сочный, сладкий и бодрящий.</div>
+                    </div>
+                    <div class="product-price">450 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Zlaya')">+</button>
+                </div>
+                <div class="product-item">
+                    <img src="zloe.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=zloe'">
+                    <div class="product-info">
+                        <div class="product-name">zloe</div>
+                        <div class="product-sku">Артикул: 017</div>
+                        <div class="product-description">Горьковатый грейпфрут с сладкой малиной. Очень свежий, бодрящий и необычный вкус.</div>
+                    </div>
+                    <div class="product-price">400 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('zloe')">+</button>
+                </div>
+
+                <h2 class="category-header">Поды / Испарители</h2>
+                <div class="product-item">
+                    <img src="Pasito_coil.jpg" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=Pasito%20coil'">
+                    <div class="product-info">
+                        <div class="product-name">Pasito coil</div>
+                        <div class="product-sku">Артикул: 015</div>
+                        <div class="product-description">Испаритель K-5 — мощный, долговечный и универсальный. Подходит для всех устройств.</div>
+                    </div>
+                    <div class="product-price">300 ₽</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Pasito coil')">+</button>
+                </div>
+            `;
+            container.innerHTML = allProducts;
+            return;
+        }
+
+        // Фильтрация
+        const filtered = [
+            { name:'Soak', sku:'001', price:600, image:'Soak.jpg', description:'Освежающий вкус с легкой кислинкой. Идеален для вечернего релакса.' },
+            { name:'Dota', sku:'002', price:400, image:'Dota.jpg', description:'Фруктовый вкус, идеален для вечернего релакса.' },
+            { name:'grex', sku:'003', price:450, image:'grex.jpg', description:'Кремовый, сладкий и очень уютный.' },
+            { name:'inu', sku:'004', price:300, image:'inu.jpg', description:'Насыщенный вкус спелого банана.' },
+            { name:'isterika', sku:'005', price:400, image:'isterika.jpg', description:'Уникальный вкус арбузной жевательной резинки.' },
+            { name:'Podonki', sku:'006', price:450, image:'Podonki.jpg', description:'Чистый, сочный вкус спелого арбуза.' },
+            { name:'samoybitsa', sku:'007', price:400, image:'samoybitsa.jpg', description:'Кисло-сладкий вкус виноградной газировки.' },
+            { name:'Samoybitsia', sku:'008', price:400, image:'Samoybitsia.jpg', description:'Идеальное сочетание кислой вишни и цитрусового лимона.' },
+            { name:'Anarhia', sku:'009', price:400, image:'Anarhia.jpg', description:'Освежающий вкус ананасовой газировки с легкой кислинкой. Идеален для летнего дня.' },
+            { name:'Angry vape', sku:'010', price:400, image:'Angry_vape.jpg', description:'Классический вкус апельсиновой газировки — сладкий, сочный и бодрящий.' },
+            { name:'Bkack out', sku:'011', price:370, image:'Bkack_out.jpg', description:'Чистый, сочный вкус спелого арбуза. Легкий, освежающий и идеальный для жаркого лета.' },
+            { name:'isterika mix', sku:'012', price:400, image:'isterika_mix.jpg', description:'Уникальный вкус арбузной жевательной резинки — сладкий, фруктовый и немного мятный.' },
+            { name:'Jnets', sku:'013', price:450, image:'Jnets.jpg', description:'Насыщенный вкус спелого банана. Кремовый, сладкий и очень уютный.' },
+            { name:'Monstervapor', sku:'014', price:400, image:'Monstervapor.jpg', description:'Кисло-сладкий вкус виноградной газировки. Яркий, бодрящий и неповторимый.' },
+            { name:'Pasito coil', sku:'015', price:300, image:'Pasito_coil.jpg', description:'Испаритель K-5 — мощный, долговечный и универсальный. Подходит для всех устройств.' },
+            { name:'Zlaya', sku:'016', price:450, image:'Zlaya.jpg', description:'Фруктовый вкус, идеален для вечернего релакса. Сочный, сладкий и бодрящий.' },
+            { name:'zloe', sku:'017', price:400, image:'zloe.jpg', description:'Горьковатый грейпфрут с сладкой малиной. Очень свежий, бодрящий и необычный вкус.' },
+        ].filter(p =>
+            p.name.toLowerCase().includes(searchTerm) ||
+            p.sku.toLowerCase().includes(searchTerm) ||
+            p.description.toLowerCase().includes(searchTerm)
+        );
+
+        if (filtered.length === 0) {
+            container.innerHTML = '<p style="text-align:center; padding:40px; color:#777;">Товары не найдены</p>';
+        } else {
+            let html = '';
+            let currentCategory = '';
+
+            filtered.forEach(p => {
+                // Определяем категорию
+                let category = '';
+                if (p.name === 'Soak') {
+                    category = 'Одноразки';
+                } else if (p.name === 'Pasito coil') {
+                    category = 'Поды / Испарители';
+                } else {
+                    category = 'Жидкости';
+                }
+
+                // Добавляем заголовок категории, если он изменился
+                if (category !== currentCategory) {
+                    if (currentCategory !== '') {
+                        html += '</div>'; // Закрываем предыдущую категорию
+                    }
+                    html += `<h2 class="category-header">${category}</h2><div class="product-list">`;
+                    currentCategory = category;
+                }
+
+                html += `
+                    <div class="product-item">
+                        <img src="${p.image}" class="product-image" onerror="this.src='https://via.placeholder.com/50?text=${p.name}'">
+                        <div class="product-info">
+                            <div class="product-name">${p.name}</div>
+                            <div class="product-sku">Артикул: ${p.sku}</div>
+                            <div class="product-description">${p.description}</div>
+                        </div>
+                        <div class="product-price">${p.price} ₽</div>
+                        <button class="add-to-cart-btn" onclick="addToCart('${p.name}')">+</button>
+                    </div>
+                `;
+            });
+
+            if (currentCategory !== '') {
+                html += '</div>';
+            }
+
+            container.innerHTML = html;
+        }
+    }
+</script>
+
+</body>
+</html>
